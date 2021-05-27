@@ -1,0 +1,34 @@
+.inputTask-container input {
+    background: transparent;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.inputTask-container input:focus {
+    outline: none;
+}
+.addTaskBtn {
+    position: absolute;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: rotate(180deg);
+    top: -9px;
+    right: 3px;
+}
+.addTaskBtn:hover {
+    opacity: .4;
+    cursor: pointer;
+}
+.inputTask-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.groupInput {
+    display: flex;
+    position: relative;
+}

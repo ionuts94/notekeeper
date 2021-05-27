@@ -1,0 +1,39 @@
+.hidden {
+    display: none;
+}
+
+.passMatch {
+    width: 50%;
+    display: block;
+    color: red;
+    text-align: left;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.loadingSpin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    border: 5px solid #18d26e;
+    border-top-color: transparent;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

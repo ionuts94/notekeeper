@@ -1,0 +1,123 @@
+.greeting {
+    color: gray;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.greetingPhone {
+    display: none;
+}
+
+.signOutBtn {
+    background: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.signOutBtn:hover {
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.loading {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notes-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.notes-number {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+}
+.notes-number h1 { 
+    font-weight: 200;
+    width:80%;
+}
+.notes-number button {
+    font-weight: 600;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+.notes-number button:hover {
+    text-shadow: 2px 2px 10px gray;
+}
+
+
+/* ---------------RESPONSIVITY ----------------*/
+
+@media screen and (max-width: 840px) {
+    .notes-number {
+        width: 95%;
+    }
+    .notes-number h1 {
+        width: 60%;
+    }
+    .notes-number button {
+        width: 40%;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding: 0;
+    }
+    .greeting {
+        display: none;
+    }
+    .greetingPhone {
+        display: block;
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+    .signOutBtn {
+        display: block;
+    }
+    .notes-number {
+        display: block;
+    }
+    .notes-number h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .notes-number button {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+}

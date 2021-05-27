@@ -1,0 +1,171 @@
+
+.homepageNav {
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 70px 5rem 30px 0;
+    color: seashell;
+    text-align: right;
+    box-shadow: 0px 20px 20px -30px gray;
+}
+
+.homepageNav span {
+    cursor: pointer;
+    margin-left: 40px;
+    position: relative;
+}
+
+.homepageNav span:hover {
+    color: white;
+    transition: all 0.3s;
+}
+
+.homepageNav span:hover::before {
+    width: 80%;
+    transition: all .3s;
+}
+
+.homepageNav span::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: #18d26e;
+    transition: .4s;
+}
+
+.appDescritpion {
+    min-height: calc(100vh - 128px);
+    height: fit-content;
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: seashell;
+    
+}
+
+.appDescritpion p {
+    font-size: 1.3rem;
+}
+
+
+.appDescritpion img {
+    height: 280px;
+}
+
+.noteImgContainer {
+    margin: 100px auto 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.noteImgs:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+.imgOne {
+    transform: rotate(3deg) translateY(10px);
+    position: relative;
+}
+
+.imgOne::before {
+    content: 'To do';
+    color: black;
+    position: absolute;
+    font-size: 50px;
+    font-family: Caveat;
+    transform: translate(70px, 40px) rotate(-7deg);
+    font-weight: bold;
+}
+
+.imgOne::after {
+    content: 'Clean the room \A Do the shopping';
+    white-space: pre;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    font-family: Caveat;
+    transform: translate(70px, 110px) rotate(-7deg);
+    color: black;
+}
+
+.imgTwo {
+    transform: rotate(1deg) translateY(10px);
+    position: relative;
+}
+
+.imgTwo::before {
+    content: 'To learn';
+    color: black;
+    position: absolute;
+    font-size: 50px;
+    font-family: Caveat;
+    transform: translate(60px, 40px) rotate(-7deg);
+    font-weight: bold;
+}
+
+.imgTwo::after {
+    content: 'HTML \A CSS \A JavaScript';
+    white-space: pre;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    font-family: Caveat;
+    transform: translate(90px, 110px) rotate(-7deg);
+    color: black;
+}
+
+.imgThree {
+    transform: rotate(10deg) translateY(10px);
+    position: relative;
+}
+
+.imgThree::before {
+    content: 'To watch';
+    color: black;
+    position: absolute;
+    font-size: 50px;
+    font-family: Caveat;
+    transform: translate(60px, 40px) rotate(-7deg);
+    font-weight: bold;
+}
+
+.imgThree::after {
+    content: 'The black list \A Snowpiercer \A The last Protector';
+    white-space: pre;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    font-family: Caveat;
+    transform: translate(80px, 110px) rotate(-7deg);
+    color: black;
+}
+
+
+
+/* --------------------RESPONSIVITY------------------------ */
+
+@media screen and (max-width: 500px) {
+    .homepageNav {
+        padding: 30px 0 30px 0;
+    }
+    .homepageNav span {
+        display: block;
+        padding: 10px;
+        margin: 0 auto;
+        width: 40%;
+        text-align: center;
+    }
+    .imgTwo, .imgThree {
+        display: none;
+    }
+}

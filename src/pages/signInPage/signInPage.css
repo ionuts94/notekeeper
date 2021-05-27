@@ -1,0 +1,39 @@
+.signInPage {
+    min-height: calc(100vh - 128px);
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.signInContainer {
+    margin-top: 100px;
+    width: 400px;
+    margin: 0 auto;
+    background: rgba(255,255, 255, .4);
+    padding: 50px 30px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px;
+}
+
+.signInContainer h1 {
+    margin-bottom: 70px;
+}
+
+.mt40 {
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .signInPage {
+        min-height: calc(100vh - 205px);
+    }
+    .signInContainer {
+        padding: 0 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .signInContainer h1 {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,59 @@
+.formInputContainer {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.groupControls {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.formInputContainer input {
+    height: 100%;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+.formInputContainer label {
+    font-size: 20px;
+    color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 14px;
+    left: 0;
+    transition: .3s;
+}
+
+.formInputContainer input:focus {
+    outline: none;
+}
+
+input:focus + label {
+    color: black;
+    font-size: 14px;
+    transition: .3s;
+    top: 0;
+}
+
+input:not(:placeholder-shown) + label {
+    top:0;
+    font-size: 14px;
+    color: black;
+}
+  
+input:placeholder-shown {
+    transition: .3s;
+}
+
+
+@media screen and (max-width: 500px) {
+    .groupControls {
+        width: 100%;
+    }
+}
